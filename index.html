@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        EduGenie - AI Learning Assistant
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<main class="container">
+
+    <!-- HEADER -->
+
+    <header class="hero">
+
+        <div>
+
+            <p class="eyebrow">
+                EDUGENIE
+            </p>
+
+            <h1>
+                Learn smarter with AI.
+            </h1>
+
+            <p class="subtitle">
+
+                Ask questions, simplify difficult concepts,
+                generate quizzes, summarize notes,
+                and create personalized learning paths.
+
+            </p>
+
+        </div>
+
+        <span class="badge">
+            Gemini Powered
+        </span>
+
+    </header>
+
+
+    <!-- INPUT CARD -->
+
+    <section class="card">
+
+        <label for="task">
+            Choose a task
+        </label>
+
+        <select id="task">
+
+            <option value="qa">
+                Ask a Question
+            </option>
+
+            <option value="explain">
+                Explain a Topic
+            </option>
+
+            <option value="quiz">
+                Generate Quiz
+            </option>
+
+            <option value="summarize">
+                Summarize Text
+            </option>
+
+            <option value="learn">
+                Learning Path
+            </option>
+
+        </select>
+
+
+        <div
+            id="options"
+            class="options"
+        ></div>
+
+
+        <label
+            for="inputText"
+            id="inputLabel"
+        >
+            Your question
+        </label>
+
+
+        <textarea
+            id="inputText"
+            rows="10"
+            placeholder="Example: Which is the largest ocean?"
+        ></textarea>
+
+
+        <button
+            id="submitBtn"
+        >
+            Generate
+        </button>
+
+    </section>
+
+
+    <!-- RESULT -->
+
+    <section
+        id="result"
+        class="result card hidden"
+    >
+
+        <div class="result-header">
+
+            <h2>
+                Result
+            </h2>
+
+            <button
+                id="copyBtn"
+                class="secondary"
+            >
+                Copy
+            </button>
+
+        </div>
+
+
+        <div id="resultContent"></div>
+
+    </section>
+
+
+    <footer>
+
+        EduGenie
+        <span>•</span>
+        FastAPI
+        <span>•</span>
+        Google Gemini
+
+    </footer>
+
+</main>
+
+
+<script src="/static/app.js"></script>
+
+</body>
+
+</html>
